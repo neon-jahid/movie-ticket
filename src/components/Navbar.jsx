@@ -1,10 +1,20 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
     return (
-        <div>
-            <h1>Navbar</h1>
-        </div>
+        <nav>
+            <ul>
+                <li>
+                    <Link to={'/'}>Home</Link>
+                </li>
+                <li>
+                    <Link to={'/movies'}>Movies</Link>
+                </li>
+                <li>
+                    <Link to={'/movies/:id'}>MovieDetails</Link>
+                </li>
+            </ul>
+        </nav>
     );
 }
 
